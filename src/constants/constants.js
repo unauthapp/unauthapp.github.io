@@ -31,4 +31,10 @@ CONSTANTS.FUNCTION = {
 };
 
 
+CONSTANTS.URLS = {
+  CHROME_EXTENSION: '#',
+  FIREFOX_ADDON: '#'
+};
+
+
 export default CONSTANTS;

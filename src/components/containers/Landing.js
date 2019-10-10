@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Text, ButtonIcon, Icon } from '../core';
+import { Text, Image } from '../core';
 import { COLORS, MESSAGES, CONSTANTS } from '../../constants';
-import ChromeLogo from '../core/ChromeLogo';
-import chrome from '../core/chrome.svg';
+import { ChromeWebStore, FirefoxAddon } from '../../assets/images';
 
 
 const Container = styled.div`
@@ -32,7 +31,7 @@ const StyledCard = styled.div(props => {
     width: '340px',
     height: '80px',
     textAlign: 'center',
-    padding: '0px 0px',
+    padding: '10px 10px',
     margin: '20px 20px',
     color: props.active ? COLORS.PALETTE.PRIMARY : COLORS.PALETTE.PRIMARY_DARK,
     backgroundColor: COLORS.PALETTE.WHITE,
@@ -67,39 +66,16 @@ export default class Landing extends React.Component {
         </ELementContainer>
         <CardContainer>
           <StyledCard id={CONSTANTS.KEYS.CHROME_ACTIVE} active={chromeActive} onClick={this.props.onChoose}>
-            {/* <Icon
-              name='Chrome'
-              width='150px' height='150px'
-              style={{ margin: '25px' }}
-            /> */}
-            <ELementContainer>
-              <img width='100%' height='100px' src={'https://developer.chrome.com/webstore/images/ChromeWebStore_Badge_v2_496x150.png'} />
-            </ELementContainer>
-            <Text
-              fontSize='25px' fontWeight='bold'
-              color={chromeActive ? COLORS.PALETTE.PRIMARY : COLORS.PALETTE.PRIMARY_VERY_LIGHT}
-            >
-              {MESSAGES.BUTTON.SEND_SESSION}
-            </Text>
+            <a href={CONSTANTS.URLS.CHROME_EXTENSION} target='_blank'>
+              <Image width='100%' height='100px' src={ChromeWebStore} />
+            </a>
           </StyledCard>
           <StyledCard id={CONSTANTS.KEYS.FIREFOX_ACTIVE} active={firefoxActive} onClick={this.props.onChoose}>
-            <Icon
-              name='Sensor'
-              width='150px' height='150px'
-              color={firefoxActive ? COLORS.PALETTE.PRIMARY : COLORS.PALETTE.PRIMARY_VERY_LIGHT}
-              style={{ margin: '25px' }}
-            />
-            <Text
-              fontSize='25px' fontWeight='bold'
-              color={firefoxActive ? COLORS.PALETTE.PRIMARY : COLORS.PALETTE.PRIMARY_VERY_LIGHT}
-            >
-              {MESSAGES.BUTTON.RECEIVE_SESSION}
-            </Text>
+            <a href={CONSTANTS.URLS.FIREFOX_ADDON} target='_blank'>
+              <Image width='100%' height='100px' src={FirefoxAddon} />
+            </a>
           </StyledCard>
         </CardContainer>
-        <ELementContainer>
-          <ButtonIcon onClick={this.props.onClick}>{MESSAGES.BUTTON.GET_STARTED}</ButtonIcon>
-        </ELementContainer>
       </Container>
     )
   }
