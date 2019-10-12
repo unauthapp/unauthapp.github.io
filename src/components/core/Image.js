@@ -1,18 +1,26 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 
 
 const StyledImage = styled.img`
-  width: 80px;
-  height: 30px;
-  margin: 10px;
-`; 
+  width: ${props => props.theme.width};
+  height: ${props => props.theme.height};
+  margin: ${props => props.theme.margin};
+`;
+
+const theme = {
+  width: '50px',
+  hegiht: '50px',
+  magin: '10px'
+};
 
 export default class Image extends React.Component {
 
   render() {
     return (
-      <StyledImage src={this.props.children} />
+      <ThemeProvider theme={theme, {...this.props}}>
+        <StyledImage src={this.props.src} href={this.props.href} />
+      </ThemeProvider>
     )
   }
 }
