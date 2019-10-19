@@ -33,7 +33,7 @@ CONSTANTS.FUNCTION = {
 
 CONSTANTS.URLS = {
   CHROME_EXTENSION: '#',
-  FIREFOX_ADDON: '#'
+  FIREFOX_ADDON: 'https://addons.mozilla.org/en-US/firefox/addon/unauth-client/'
 };
 
 
