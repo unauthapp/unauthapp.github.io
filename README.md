@@ -16,3 +16,9 @@ To run the website locally use the below commands
 To generate production build use this command
 
 - `yarn run build`
+
+## Deploy
+
+Log on to server
+
+- `sh deploy.sh`
