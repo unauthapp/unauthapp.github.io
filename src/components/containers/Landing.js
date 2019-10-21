@@ -66,12 +66,12 @@ export default class Landing extends React.Component {
         </ELementContainer>
         <CardContainer>
           <StyledCard id={CONSTANTS.KEYS.CHROME_ACTIVE} active={chromeActive} onClick={this.props.onChoose}>
-            <a href={CONSTANTS.URLS.CHROME_EXTENSION} target='_blank'>
+            <a href={CONSTANTS.URLS.CHROME_EXTENSION} target='_blank' rel='noopener noreferrer'>
               <Image width='100%' height='100px' src={ChromeWebStore} />
             </a>
           </StyledCard>
           <StyledCard id={CONSTANTS.KEYS.FIREFOX_ACTIVE} active={firefoxActive} onClick={this.props.onChoose}>
-            <a href={CONSTANTS.URLS.FIREFOX_ADDON} target='_blank'>
+            <a href={CONSTANTS.URLS.FIREFOX_ADDON} target='_blank' rel='noopener noreferrer'>
               <Image width='100%' height='100px' src={FirefoxAddon} />
             </a>
           </StyledCard>

@@ -7,6 +7,7 @@ export { default as GoHome } from './GoHome';
 export { default as Icon } from './Icon';
 export { default as InputText } from './InputText';
 export { default as Image } from './Image';
+export { default as Link } from './Link';
 export { default as Logo } from './Logo';
 export { default as OneFieldForm } from './OneFieldForm';
 export { default as PromptConfirm } from './PromptConfirm';

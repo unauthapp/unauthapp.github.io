@@ -1,29 +1,18 @@
 import React from 'react';
-import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
-import { Context } from '../../lib';
-import { COLORS, CONSTANTS, ROUTES } from '../../constants';
+import { ROUTES } from '../../constants';
+import { Image } from '.';
+import UnauthLogo from '../../logo.svg';
 
-
-const StyledText = styled.div`
-  color: ${COLORS.PALETTE.PRIMARY};
-  font-size: 30px;
-  font-weight: 800;
-  cursor: pointer;
-`;
 
 export default class Logo extends React.Component {
 
-  handleGoHome() {
-    const fn = Context.get(CONSTANTS.KEYS.ROUTER);
-    if (fn) {
-      fn(ROUTES.HOME)
-    }
-  }
-
   render() {
     return (
-      <StyledText onClick={this.handleGoHome}>{this.props.children}</StyledText>
+      <Link to={ROUTES.HOME}>
+        <Image width='150px' height='80px' margin='-10px' src={UnauthLogo} />
+      </Link>
     )
   }
 }

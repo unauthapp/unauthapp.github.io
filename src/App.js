@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import { Home } from './pages';
+import { Home, Privacy } from './pages';
 import { ToastMessage, PromptConfirm } from './components/core';
 import { Header, Footer } from './components/containers'
-import { GAInit, GAPageView } from './lib/ga';
 
 import { ROUTES, COLORS } from './constants';
 
@@ -31,24 +31,22 @@ const StyledBox = styled.div`
 `;
 
 class App extends Component {
-
-  componentDidMount() {
-    GAInit();
-    GAPageView(ROUTES.HOME);
-  }
-
   render() {
-
     return (
-      <div className='App'>
-        <PromptConfirm />
-        <ToastMessage />
-        <StyledBox>
-          <Header />
-          <Home />
-          <Footer />
-        </StyledBox>
-      </div>
+      <Router>
+        <div className='App'>
+          <PromptConfirm />
+          <ToastMessage />
+          <StyledBox>
+            <Header />
+            <Switch>
+              <Route exact path={ROUTES.HOME} component={Home} />
+              <Route path={ROUTES.PRIVACY} component={Privacy} />
+            </Switch>
+            <Footer />
+          </StyledBox>
+        </div>
+      </Router>
     );
   }
 }

@@ -19,7 +19,8 @@ const MESSAGES = {
     SEND_SESSION: 'Send Session'
   },
   TITLE: {
-    CONFIRM: 'Continue?'
+    CONFIRM: 'Continue?',
+    PRIVACY: 'Privacy Policy'
   }
 }
 
