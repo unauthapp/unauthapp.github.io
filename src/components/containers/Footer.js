@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Text } from '../core';
+import { Text, Link } from '../core';
 
-import { MESSAGES, COLORS } from '../../constants';
+import { MESSAGES, COLORS, ROUTES } from '../../constants';
+
 
 
 const Box = styled.div`
@@ -21,7 +22,7 @@ const TextContainer = styled.div`
 `;
 
 
-export default class Header extends React.Component {
+export default class Footer extends React.Component {
 
   render() {
     return (
@@ -30,6 +31,11 @@ export default class Header extends React.Component {
           <Text fontSize='20px' letterSpacing='2px' color={COLORS.PALETTE.BLACK}>
             {MESSAGES.PLACEHOLDER.COPYRIGHT}
           </Text>
+        </TextContainer>
+        <TextContainer>
+          <Link to={ROUTES.PRIVACY} fontSize='15px' color={COLORS.PALETTE.BLACK}>
+            {MESSAGES.TITLE.PRIVACY}
+          </Link>
         </TextContainer>
       </Box>
     )
