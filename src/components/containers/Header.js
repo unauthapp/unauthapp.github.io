@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Logo } from '../core';
+import { Logo, Icon } from '../core';
 
-import { COLORS } from '../../constants';
+import { CONSTANTS, COLORS } from '../../constants';
 
 
 const Container = styled.div`
@@ -18,13 +18,24 @@ const Container = styled.div`
   box-shadow: 0 1px 30px ${COLORS.PALETTE.SHADOW};
 `
 
+const StyledHref = styled.a`
+  text-decoration: none;
+`
+
 
 export default class Header extends React.Component {
 
   render() {
     return (
       <Container>
-        <Logo>unauth</Logo>
+        <Logo />
+        <StyledHref href={CONSTANTS.URLS.YOUTUBE_TUTORIALS} target='_blank' rel='noopener noreferrer'>
+          <Icon
+            name='Youtube'
+            color={COLORS.PALETTE.YOUTUBE}
+            width='50px' height='50px'
+          />
+        </StyledHref>
       </Container>
     )
   }
