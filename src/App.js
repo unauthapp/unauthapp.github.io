@@ -1,16 +1,11 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import styled from 'styled-components';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
-import { Home, Privacy } from './pages';
-import { ToastMessage, PromptConfirm } from './components/core';
-import { Header, Footer } from './components/containers'
-
-import { ROUTES, COLORS } from './constants';
-
 import './App.css';
-
-
+import { Footer, Header } from './components/containers';
+import { PromptConfirm, ToastMessage } from './components/core';
+import { COLORS, ROUTES } from './constants';
+import { Home, Privacy } from './pages';
 
 const StyledBox = styled.div`
   display: flex;
@@ -28,6 +23,9 @@ const StyledBox = styled.div`
   box-shadow: 0 1px 30px ${COLORS.PALETTE.SHADOW};
   overflow-x: scroll;
   overflow-y: scroll;
+  @media only screen and (max-width: 900px) {
+     margin: 20px;
+  };
 `;
 
 class App extends Component {

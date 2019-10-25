@@ -1,10 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-
-import { Logo, Icon } from '../core';
-
-import { CONSTANTS, COLORS } from '../../constants';
-
+import { COLORS, CONSTANTS } from '../../constants';
+import { Icon, Logo } from '../core';
 
 const Container = styled.div`
   display: flex;
@@ -16,13 +13,20 @@ const Container = styled.div`
   padding-left: 100px;
   padding-right: 100px;
   box-shadow: 0 1px 30px ${COLORS.PALETTE.SHADOW};
+  @media only screen and (max-width: 900px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  };
+
+  @media only screen and (max-width: 900px) and (orientation: landscape) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  };
 `
 
 const StyledHref = styled.a`
   text-decoration: none;
 `
-
-
 export default class Header extends React.Component {
 
   render() {
