@@ -1,11 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-
-import { Text, Link } from '../core';
-
-import { MESSAGES, COLORS, ROUTES } from '../../constants';
-
-
+import { COLORS, MESSAGES, ROUTES } from '../../constants';
+import { Link, Text } from '../core';
 
 const Box = styled.div`
   padding-top: 30px;
@@ -15,12 +11,14 @@ const Box = styled.div`
   margin-top: 10px;
   background-color: ${COLORS.PALETTE.LIGHT_GRAY};
   box-shadow: 0 30px 30px ${COLORS.PALETTE.SHADOW};
+  @media only screen and (max-width: 900px) {
+    padding: 10px;
+  };
 `
 
 const TextContainer = styled.div`
   margin: 15px;
 `;
-
 
 export default class Footer extends React.Component {
 

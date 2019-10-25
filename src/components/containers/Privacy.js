@@ -1,26 +1,27 @@
 import React from 'react';
 import styled from 'styled-components';
-
-import { Text } from '../core';
 import { COLORS } from '../../constants';
-
+import { Text } from '../core';
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 20px 0;
 `;
 
 const Header = styled.div`
   margin-top: 5px;
 `;
 
-const Body = styled.div`  
+const Body = styled.div`
   margin-left: 200px;
   margin-right: 200px;
+  @media only screen and (max-width: 900px) {
+    margin: 0 30px;
+  };
 `;
-
 
 export default class Privacy extends React.Component {
 

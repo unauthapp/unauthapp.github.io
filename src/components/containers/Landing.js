@@ -1,10 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-
-import { Text, Image } from '../core';
-import { COLORS, MESSAGES, CONSTANTS } from '../../constants';
 import { ChromeWebStore, FirefoxAddon } from '../../assets/images';
-
+import { COLORS, CONSTANTS, MESSAGES } from '../../constants';
+import { Image, Text } from '../core';
 
 const Container = styled.div`
   display: flex;
@@ -18,35 +16,34 @@ const CardContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  @media only screen and (max-width: 900px) {
+    flex-wrap: wrap;
+    width: 100%;
+  };
 `;
 
-
-const StyledCard = styled.div(props => {
-
-  return {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    width: '340px',
-    height: '80px',
-    textAlign: 'center',
-    padding: '10px 10px',
-    margin: '20px 20px',
-    color: props.active ? COLORS.PALETTE.PRIMARY : COLORS.PALETTE.PRIMARY_DARK,
-    backgroundColor: COLORS.PALETTE.WHITE,
-    fontSize: '45px',
-    border: 'none',
-    borderRadius: '15px',
-    boxShadow: `0 1px 30px ${COLORS.PALETTE.SHADOW}`,
-    cursor: 'pointer',
-  }
-});
+const StyledCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 340px;
+  height: 80px;
+  text-align: center;
+  padding: 10px 10px;
+  margin: 20px 20px;
+  color: ${props => props.active ? COLORS.PALETTE.PRIMARY : COLORS.PALETTE.PRIMARY_DARK};
+  background-color: ${COLORS.PALETTE.WHITE};
+  font-size: 45px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 1px 30px ${COLORS.PALETTE.SHADOW};
+  cursor: pointer;
+`;
 
 const ELementContainer = styled.div`
   margin: 10px;
 `;
-
 
 export default class Landing extends React.Component {
 
@@ -67,12 +64,12 @@ export default class Landing extends React.Component {
         <CardContainer>
           <StyledCard id={CONSTANTS.KEYS.CHROME_ACTIVE} active={chromeActive} onClick={this.props.onChoose}>
             <a href={CONSTANTS.URLS.CHROME_EXTENSION} target='_blank' rel='noopener noreferrer'>
-              <Image width='100%' height='100px' src={ChromeWebStore} />
+              <Image width='100%'  src={ChromeWebStore} />
             </a>
           </StyledCard>
           <StyledCard id={CONSTANTS.KEYS.FIREFOX_ACTIVE} active={firefoxActive} onClick={this.props.onChoose}>
             <a href={CONSTANTS.URLS.FIREFOX_ADDON} target='_blank' rel='noopener noreferrer'>
-              <Image width='100%' height='100px' src={FirefoxAddon} />
+              <Image width='100%'  src={FirefoxAddon} />
             </a>
           </StyledCard>
         </CardContainer>
