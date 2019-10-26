@@ -1,7 +1,7 @@
 import React from 'react';
-import { faHome } from "@fortawesome/fontawesome-free-brands";
-import { faHome2 } from "@fortawesome/fontawesome-free-solid";
-import  FontAwesomeIcon from "@fortawesome/fontawesome";
+import "@fortawesome/fontawesome-free-brands";
+import "@fortawesome/fontawesome-free-solid";
+import "@fortawesome/fontawesome";
 import styled from 'styled-components';
 import { COLORS, MESSAGES, ROUTES } from '../../constants';
 import { Link, Text } from '../core';
@@ -42,13 +42,13 @@ export default class Footer extends React.Component {
           </Link>
         </TextContainer>
         <TextContainer>
-          <a href="https://www.facebook.com/unauthapp" target="_blank" class="social">
+          <a href="https://www.facebook.com/unauthapp" target="_blank" rel="noopener noreferrer" class="social">
               <i class="fab fa-facebook-square"></i>
             </a>
-            <a href="https://twitter.com/unauthapp" target="_blank" class="social">
+            <a href="https://twitter.com/unauthapp" target="_blank" rel="noopener noreferrer" class="social">
               <i class="fab fa-twitter-square"></i>
             </a>
-          <a href="mailto:unauth.cloud@gmail.com" target="_blank" class="social">
+          <a href="mailto:unauth.cloud@gmail.com" target="_blank" rel="noopener noreferrer" class="social">
           <i class="fas fa-at"></i>
           </a>
         </TextContainer>
