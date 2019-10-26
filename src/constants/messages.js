@@ -20,7 +20,8 @@ const MESSAGES = {
   },
   TITLE: {
     CONFIRM: 'Continue?',
-    PRIVACY: 'Privacy Policy'
+    PRIVACY: 'Privacy Policy',
+    CONTACT: 'Contact Us',
   }
 }
 

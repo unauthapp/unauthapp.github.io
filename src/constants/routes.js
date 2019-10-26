@@ -1,6 +1,7 @@
 const ROUTES = {
   HOME: '/',
-  PRIVACY: '/privacy'
+  PRIVACY: '/privacy',
+  CONTACT: '/contact-us',
 };
 
 

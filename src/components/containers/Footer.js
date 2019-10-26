@@ -4,7 +4,7 @@ import "@fortawesome/fontawesome-free-solid";
 import "@fortawesome/fontawesome";
 import styled from 'styled-components';
 import { COLORS, MESSAGES, ROUTES, CONSTANTS } from '../../constants';
-import { Text } from '../core';
+import { Text, Link } from '../core';
 
 const Box = styled.div`
   padding-top: 10px;
@@ -43,7 +43,7 @@ export default class Footer extends React.Component {
         </Container>
         <Container>
           <Text fontSize='15px' color={COLORS.PALETTE.BLACK}>
-            <a href={ROUTES.PRIVACY}>{MESSAGES.TITLE.PRIVACY}</a>
+            <a href={ROUTES.PRIVACY}>{MESSAGES.TITLE.PRIVACY}</a><br/>
           </Text>
         </Container>
         <Container>
