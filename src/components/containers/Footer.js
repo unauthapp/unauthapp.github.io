@@ -3,7 +3,7 @@ import "@fortawesome/fontawesome-free-brands";
 import "@fortawesome/fontawesome-free-solid";
 import "@fortawesome/fontawesome";
 import styled from 'styled-components';
-import { COLORS, MESSAGES, ROUTES } from '../../constants';
+import { COLORS, MESSAGES, ROUTES, CONSTANTS } from '../../constants';
 import { Text } from '../core';
 
 const Box = styled.div`
@@ -47,13 +47,13 @@ export default class Footer extends React.Component {
           </Text>
         </Container>
         <Container>
-          <a href={ROUTES.FACEBOOK} target="_blank" rel="noopener noreferrer">
+          <a href={CONSTANTS.URLS.FACEBOOK} target="_blank" rel="noopener noreferrer">
             <i style={fontAwesomeStyle} class="fab fa-facebook-square" />
           </a>
-          <a href={ROUTES.TWITTER} target="_blank" rel="noopener noreferrer">
+          <a href={CONSTANTS.URLS.TWITTER} target="_blank" rel="noopener noreferrer">
             <i style={fontAwesomeStyle} class="fab fa-twitter-square" />
           </a>
-          <a href={ROUTES.MAIL} target="_blank" rel="noopener noreferrer">
+          <a href={CONSTANTS.URLS.MAIL} target="_blank" rel="noopener noreferrer">
             <i style={fontAwesomeStyle} class="fas fa-at" />
           </a>
         </Container>
