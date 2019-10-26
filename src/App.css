@@ -24,6 +24,12 @@
   color: #031EA2;
 }
 
+a:visited, a:link{
+  color: #000000;
+  padding-left: 1rem;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -33,8 +33,11 @@ CONSTANTS.FUNCTION = {
 
 CONSTANTS.URLS = {
   CHROME_EXTENSION: '#',
+  FACEBOOK: 'https://www.facebook.com/unauthapp',
   FIREFOX_ADDON: 'https://addons.mozilla.org/en-US/firefox/addon/unauth-app/',
-  YOUTUBE_TUTORIALS: 'https://www.youtube.com/watch?v=w4Kr3M_ex90&list=PL6I_V8VURCIOV-MQcGAcKxbF9r72KAxcy'
+  MAIL: 'mailto:unauth.cloud@gmail.com',
+  TWITTER: 'https://twitter.com/unauthapp',
+  YOUTUBE_TUTORIALS: 'https://www.youtube.com/watch?v=w4Kr3M_ex90&list=PL6I_V8VURCIOV-MQcGAcKxbF9r72KAxcy',
 };
 
 
