@@ -20,7 +20,6 @@ const Box = styled.div`
 `
 
 const TextContainer = styled.div`
-  margin: 15px;
   color: red;
 `;
 
