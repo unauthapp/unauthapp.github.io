@@ -20,6 +20,7 @@ const Box = styled.div`
 `
 
 const TextContainer = styled.div`
+  margin: 15px;
   color: red;
 `;
 
@@ -36,18 +37,18 @@ export default class Footer extends React.Component {
           </Text>
         </TextContainer>
         <TextContainer>
-          <Link to={ROUTES.PRIVACY} fontSize='15px' color={COLORS.PALETTE.BLACK}>
-            {MESSAGES.TITLE.PRIVACY}
-          </Link>
+          <Text fontSize='15px' color={COLORS.PALETTE.BLACK}>
+            <a href={ROUTES.PRIVACY}>{MESSAGES.TITLE.PRIVACY}</a>
+          </Text>
         </TextContainer>
         <TextContainer>
-          <a href="https://www.facebook.com/unauthapp" target="_blank" rel="noopener noreferrer" class="social">
+          <a href={ROUTES.FACEBOOK} target="_blank" rel="noopener noreferrer" class="social">
               <i class="fab fa-facebook-square"></i>
             </a>
-            <a href="https://twitter.com/unauthapp" target="_blank" rel="noopener noreferrer" class="social">
+            <a href={ROUTES.TWITTER} target="_blank" rel="noopener noreferrer" class="social">
               <i class="fab fa-twitter-square"></i>
             </a>
-          <a href="mailto:unauth.cloud@gmail.com" target="_blank" rel="noopener noreferrer" class="social">
+          <a href={ROUTES.MAIL} target="_blank" rel="noopener noreferrer" class="social">
           <i class="fas fa-at"></i>
           </a>
         </TextContainer>
