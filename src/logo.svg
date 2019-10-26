@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="400px" height="107px" viewBox="0 0 400 107" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+<svg width="440px" height="107px" viewBox="0 0 500 107" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Logo</title>
     <desc>Created with Sketch.</desc>
     <g id="Logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <text id="nau" font-family="Lato-Bold, Lato" font-size="110" font-weight="bold" fill="#175CD0">
-            <tspan x="109" y="87">nau</tspan>
-        </text>
-        <text id="th" font-family="Lato-Bold, Lato" font-size="110" font-weight="bold" fill="#175CD0">
-            <tspan x="289" y="87">th</tspan>
+        <text id="nauth" font-family="Lato-Bold, Lato" font-size="110" font-weight="bold" fill="#175CD0">
+            <tspan x="109" y="87">nauth</tspan>
         </text>
         <circle id="Oval" fill="#175CD0" cx="58" cy="54" r="50"></circle>
         <text id="U" transform="translate(62.500000, 61.000000) rotate(-360.000000) translate(-62.500000, -61.000000) " font-family="ReachtheEnd, Reach the End" font-size="75" font-weight="normal" fill="#F6F8FB">
