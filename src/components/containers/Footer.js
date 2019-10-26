@@ -4,11 +4,11 @@ import "@fortawesome/fontawesome-free-solid";
 import "@fortawesome/fontawesome";
 import styled from 'styled-components';
 import { COLORS, MESSAGES, ROUTES } from '../../constants';
-import { Link, Text } from '../core';
+import { Text } from '../core';
 
 const Box = styled.div`
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 100px;
   padding-right: 100px;
   margin-top: 10px;
@@ -19,10 +19,15 @@ const Box = styled.div`
   };
 `
 
-const TextContainer = styled.div`
-  margin: 15px;
-  color: red;
+const Container = styled.div`
+  margin: 12px;
+  font-size: 30px;
 `;
+
+
+const fontAwesomeStyle = {
+  fontSize: '25px'
+};
 
 
 
@@ -31,29 +36,29 @@ export default class Footer extends React.Component {
   render() {
     return (
       <Box>
-        <TextContainer>
+        <Container>
           <Text fontSize='20px' letterSpacing='2px' color={COLORS.PALETTE.BLACK}>
             {MESSAGES.PLACEHOLDER.COPYRIGHT}
           </Text>
-        </TextContainer>
-        <TextContainer>
+        </Container>
+        <Container>
           <Text fontSize='15px' color={COLORS.PALETTE.BLACK}>
             <a href={ROUTES.PRIVACY}>{MESSAGES.TITLE.PRIVACY}</a>
           </Text>
-        </TextContainer>
-        <TextContainer>
-          <a href={ROUTES.FACEBOOK} target="_blank" rel="noopener noreferrer" class="social">
-              <i class="fab fa-facebook-square"></i>
-            </a>
-            <a href={ROUTES.TWITTER} target="_blank" rel="noopener noreferrer" class="social">
-              <i class="fab fa-twitter-square"></i>
-            </a>
-          <a href={ROUTES.MAIL} target="_blank" rel="noopener noreferrer" class="social">
-          <i class="fas fa-at"></i>
+        </Container>
+        <Container>
+          <a href={ROUTES.FACEBOOK} target="_blank" rel="noopener noreferrer">
+            <i style={fontAwesomeStyle} class="fab fa-facebook-square" />
           </a>
-        </TextContainer>
+          <a href={ROUTES.TWITTER} target="_blank" rel="noopener noreferrer">
+            <i style={fontAwesomeStyle} class="fab fa-twitter-square" />
+          </a>
+          <a href={ROUTES.MAIL} target="_blank" rel="noopener noreferrer">
+            <i style={fontAwesomeStyle} class="fas fa-at" />
+          </a>
+        </Container>
       </Box>
-      
+
     )
   }
 }
