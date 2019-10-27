@@ -6,6 +6,7 @@ import COLORS from '../../constants/colors';
 
 
 const StyledText = styled.div`
+  display: ${props => props.theme.display};
   color: ${props => props.theme.color};
   font-size: ${props => props.theme.fontSize};
   font-weight: ${props => props.theme.fontWeight};
@@ -14,6 +15,7 @@ const StyledText = styled.div`
 `;
 
 const theme = {
+  display: 'block',
   color: COLORS.PALETTE.TEXT_BLACK,
   fontSize: '25px',
   fontWeight: 'normal',
