@@ -38,6 +38,7 @@ CONSTANTS.URLS = {
   MAIL: 'mailto:unauth.cloud@gmail.com',
   TWITTER: 'https://twitter.com/unauthapp',
   YOUTUBE_TUTORIALS: 'https://www.youtube.com/watch?v=w4Kr3M_ex90&list=PL6I_V8VURCIOV-MQcGAcKxbF9r72KAxcy',
+  GITHUB: 'https://github.com/unauthapp/unauthapp.github.io'
 };
 
 

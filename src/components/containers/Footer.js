@@ -56,6 +56,9 @@ export default class Footer extends React.Component {
           <a href={CONSTANTS.URLS.MAIL} target="_blank" rel="noopener noreferrer">
             <i style={fontAwesomeStyle} class="fas fa-at" />
           </a>
+          <a href={CONSTANTS.URLS.GITHUB} target="_blank" rel="noopener noreferrer">
+            <i style={fontAwesomeStyle} class="fab fa-github" />
+          </a>
         </Container>
       </Box>
 
