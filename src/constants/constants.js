@@ -25,21 +25,20 @@ CONSTANTS.STATUS = {
 
 CONSTANTS.FUNCTION = {
   TOAST_SUCCESS: 'toastSuccess',
-  TOAST_FAIL: 'toastFail',
+  TOAST_FAIL: 'toastFail',  
   POPUP_SHOW: 'popupShow',
   POPUP_HIDE: 'popupHide'
 };
 
 
 CONSTANTS.URLS = {
-  CHROME_EXTENSION: '#',
+  CHROME_EXTENSION: 'https://chrome.google.com/webstore/detail/unauth-app/gmlboogkeejkegkdnjhgjjkgoleppcom',
   FACEBOOK: 'https://www.facebook.com/unauthapp',
   FIREFOX_ADDON: 'https://addons.mozilla.org/en-US/firefox/addon/unauth-app/',
+  GITHUB: 'https://github.com/unauthapp/unauthapp.github.io',
   MAIL: 'mailto:unauth.cloud@gmail.com',
   TWITTER: 'https://twitter.com/unauthapp',
-  GITHUB: 'https://github.com/unauthapp',
-  YOUTUBE_TUTORIALS: 'https://www.youtube.com/watch?v=w4Kr3M_ex90&list=PL6I_V8VURCIOV-MQcGAcKxbF9r72KAxcy',
-  GITHUB: 'https://github.com/unauthapp/unauthapp.github.io'
+  YOUTUBE_TUTORIALS: 'https://www.youtube.com/watch?v=w4Kr3M_ex90&list=PL6I_V8VURCIOV-MQcGAcKxbF9r72KAxcy'
 };
 
 
