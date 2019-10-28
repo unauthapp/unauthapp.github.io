@@ -4,7 +4,7 @@ import "@fortawesome/fontawesome-free-solid";
 import "@fortawesome/fontawesome";
 import styled from 'styled-components';
 import { COLORS, MESSAGES, ROUTES, CONSTANTS } from '../../constants';
-import { Text } from '../core';
+import { Text, Link } from '../core';
 
 const Box = styled.div`
   padding-top: 10px;
@@ -43,18 +43,20 @@ export default class Footer extends React.Component {
         </Container>
         <Container>
           <Text fontSize='15px' color={COLORS.PALETTE.BLACK}>
-            <a href={ROUTES.PRIVACY}>{MESSAGES.TITLE.PRIVACY}</a>
+            <Link display='inline' to={ROUTES.PRIVACY}>
+              {MESSAGES.TITLE.PRIVACY}
+            </Link>
           </Text>
         </Container>
         <Container>
           <a href={CONSTANTS.URLS.FACEBOOK} target="_blank" rel="noopener noreferrer">
-            <i style={fontAwesomeStyle} class="fab fa-facebook-square" />
+            <i style={fontAwesomeStyle} className="fab fa-facebook-square" />
           </a>
           <a href={CONSTANTS.URLS.TWITTER} target="_blank" rel="noopener noreferrer">
-            <i style={fontAwesomeStyle} class="fab fa-twitter-square" />
+            <i style={fontAwesomeStyle} className="fab fa-twitter-square" />
           </a>
           <a href={CONSTANTS.URLS.MAIL} target="_blank" rel="noopener noreferrer">
-            <i style={fontAwesomeStyle} class="fas fa-at" />
+            <i style={fontAwesomeStyle} className="fas fa-at" />
           </a>
           <a href={CONSTANTS.URLS.GITHUB} target="_blank" rel="noopener noreferrer">
             <i style={fontAwesomeStyle} class="fab fa-github" />

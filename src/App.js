@@ -5,7 +5,7 @@ import './App.css';
 import { Footer, Header } from './components/containers';
 import { PromptConfirm, ToastMessage } from './components/core';
 import { COLORS, ROUTES } from './constants';
-import { Home, Privacy } from './pages';
+import { Home, Privacy, ContactUs } from './pages';
 
 const StyledBox = styled.div`
   display: flex;
@@ -39,6 +39,7 @@ class App extends Component {
             <Header />
             <Switch>
               <Route exact path={ROUTES.HOME} component={Home} />
+              <Route path={ROUTES.CONTACT} component={ContactUs} />
               <Route path={ROUTES.PRIVACY} component={Privacy} />
             </Switch>
             <Footer />
