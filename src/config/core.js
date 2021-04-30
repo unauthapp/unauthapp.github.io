@@ -1,3 +1,3 @@
 module.exports = {
-  URL: 'http://socket.unauthapp.com'
+  URL: process.env.REACT_APP_URL
 };
